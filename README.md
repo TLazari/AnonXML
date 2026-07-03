@@ -27,7 +27,6 @@ corretos), preservando a quantidade de linhas do XML para leitura lado a lado.
 │   ├── app.js           # lógica de UI (upload, diff, chips, tema, copiar/baixar)
 │   ├── anonimizador.js  # motor de anonimização (gera valores fake válidos)
 │   └── logo/            # logos e favicon (PNG)
-├── src/                 # assets de origem (logos)
 ├── netlify.toml         # publica apenas web/ + headers de segurança (CSP)
 └── README.md
 ```
