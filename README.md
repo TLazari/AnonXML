@@ -90,16 +90,3 @@ O `netlify.toml` aplica uma Content-Security-Policy restritiva
 requisições de rede e não carrega scripts ou fontes de terceiros. Por isso toda
 a lógica fica em arquivos JS externos (sem `<script>` ou `onclick` inline) e não
 há uso de CDNs ou Google Fonts.
-
-## Deploy no Netlify
-
-O `netlify.toml` na raiz já define `publish = "web"` (sem etapa de build).
-
-```bash
-# instale a CLI uma vez: npm i -g netlify-cli
-netlify deploy --dir=web            # preview
-netlify deploy --dir=web --prod     # produção
-```
-
-Ou conecte o repositório no painel do Netlify — ele lê o `netlify.toml`
-automaticamente e publica apenas a pasta `web/`.
