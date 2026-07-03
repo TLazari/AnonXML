@@ -1,5 +1,9 @@
 # AnonXML — Ofuscador de NF-e
 
+**🔗 Acesse: [anonxml.netlify.app](https://anonxml.netlify.app)**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/288f73f7-d369-4524-90f3-878e02a485fa/deploy-status)](https://app.netlify.com/projects/anonxml/deploys)
+
 Ferramenta web que **anonimiza XMLs de NF-e / NFC-e inteiramente no navegador**.
 Nenhum dado sai da máquina: todo o processamento é client-side, sem back-end e sem
 chamadas externas. Os valores sensíveis não são apenas mascarados — são substituídos
