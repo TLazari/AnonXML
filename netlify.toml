@@ -1,0 +1,13 @@
+# Publica apenas a pasta web/ (site estatico, sem build).
+[build]
+  publish = "web"
+  command = ""
+
+# Cabecalhos de seguranca (reforcam que a pagina nao faz chamadas externas).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "no-referrer"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'none'; img-src 'self' data:; base-uri 'self'; form-action 'none'"
